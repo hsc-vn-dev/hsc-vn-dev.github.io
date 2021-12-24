@@ -20,9 +20,9 @@ String.prototype.paddingLeft = function (paddingValue) {
 function CompareDate() {
 
        //            new Date(Year, Month, Date, Hr, Min, Sec)giam di 1 don vi;
-       var dateOne = new Date(2021, 10, 16, 17, 00, 00);
+       var dateOne = new Date(2021, 11, 24, 17, 00, 00);
        var dateTwo = new Date();
-	   var dateThree= new Date(2021, 10, 16, 23, 59, 00);
+	   var dateThree= new Date(2021, 11, 26, 23, 59, 00);
 
 
  document.getElementById("demo").innerHTML = "Tu " +"  "+ dateOne.getHours().toString().paddingLeft("00") + ":" + dateOne.getMinutes().toString().paddingLeft("00") +"  "+dateOne.getDate().toString().paddingLeft("00") + "/" + ((dateOne.getMonth() + 1).toString().paddingLeft("00") + "/" +  dateOne.getFullYear())+ "  đến  " + dateThree.getHours().toString().paddingLeft("00") + ":" + dateThree.getMinutes().toString().paddingLeft("00") +"     " +dateThree.getDate().toString().paddingLeft("00") + "/" + ((dateThree.getMonth() + 1).toString().paddingLeft("00") + "/" +  dateThree.getFullYear()) ;
